@@ -1,0 +1,77 @@
+﻿@page
+@model E_READINGSYSTEMS.Pages.Books.signupModel
+@{
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="~/css/signup.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<form method="POST">
+			<div class="rectangle">
+                <h2 class="signupname">Sign up </h2>
+                <img class="signupimg" src="~/uploads/uploads/pexels-george-milton-7034393.jpg">
+			<div class="form-group">
+				<label for="lastname">Last Name</label>
+                <br>
+                <br>
+                <br>
+              
+              
+			<input type="text" class="form-control" id="lastname" placeholder="Enter last name" name="lname" value="@Model.signupInfos.lname" required>
+			</div>
+            
+			<div class="form-group">
+				<label for="firstname">First Name</label>
+                <br>
+                <br>
+                <br>
+               
+			<input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="fname" value="@Model.signupInfos.fnames" required>
+			</div>
+			<div class="form-group">
+				<label for="username">Username</label>
+                <br>
+                <br>
+                <br>
+               
+			<input type="text" class="form-control" id="username" placeholder="Enter username" name="userName" value="@Model.signupInfos.userName" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+                <br>
+                <br>
+                <br>
+                
+			<input type="password" class="form-control" id="password" placeholder="Enter password" name="password" value="@Model.signupInfos.password" required>
+			</div>
+			<div class="form-group">
+				<label for="confirmpassword">Confirm Password</label>
+                <br>
+                <br>
+                <br>
+                
+			<input type="password" class="form-control" id="confirmpassword" placeholder="ReEnter password" name="confirmpassword" value="@Model.signupInfos.confirmpassword" required>
+			</div>
+			<button type="submit" class="btn btn-primary">SIGN IN</button>
+
+			</div>
+           
+		</form>
+        
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+

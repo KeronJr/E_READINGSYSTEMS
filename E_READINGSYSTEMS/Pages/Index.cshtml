@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Books/Index">Books</a>
+</li>
+<li class="nav-item-right">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Signup/signup">Signup</a>
+</li>
+<li class="nav-item-right">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Signup/login">Login</a>
+</li>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home1">
+        <img class="homeimage" src="/images/hero-bg.jpg">
+
+        <div class="grid-container">
+
+            <div class="iconmenu">K.M.S</div>
+
+
+            <div id="menulist" class="about"><a href="#aboutmeplace">HOME</a></div>
+            <div id="menulist" class="about"><a href="#aboutmeplace">ABOUT</a></div>
+            <div id="menulist" class="skills"><a href="#skillspage">SKILLS</a></div>
+            <div id="menulist" class="blog"><a href="#blogpart">BLOGS</a></div>
+            <div id="menulist" class="contact"><a href="#contactpart">CONTACT</a></div>
+            <div id="menulist" class="login"><a href="signup.html">LOGIN</a></div>
+        </div>
+        <div class="hometext">WELCOME TO </div>
+        <div class="hometext1">KMS LIBRARY</div>
+        <div class="desc">An E-TRAINING SYSTEM that supports students</div>
+        <div class="desc1">with the availability of different Books </div></div>
+        <button type="submit" class="btn btn-primary">READ MORE</button>
+        </div>
+
+    </section>
+    <section class=home2>
+        <div class="aboutus">About Us</div>
+        <div class="aboutline"></div>
+        <div class="aboutcontent">It is a long established fact that a reader will be distracted by the<br> readable content of a page when looking at its layout. The point of<br> using Lorem Ipsum is that it has a more-or-less normal distribution<br> of letters, as opposed to using 'Content here, content here', making it<br> look like readable English. Many desktop publishing packages and<br> web page editors now use Lorem Ipsum as their</div>
+        <button type="submit" class="btn1 btn-primary">Get Started</button>
+        <img class="aboutimg" src="/images/about-img.png">
+    </section>
+
+    <section class="home3">
+
+        <div class="imgrect"></div>
+        <div class="category">Categories</div>
+        <div class="catline"></div>
+
+        <div class="rect1">
+            <img class="aboutimg1" src="/images/pexels-rodolfo-clix-1366942.jpg">
+            <div class="catename"> Chemistry</div>
+            <!--<button type="submit" class="btncatche btn-primary">READ MORE</button>-->
+            <a href="/images/"></a>
+        </div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+    </section>
+
+
+
+
+</body>
+</html>
+

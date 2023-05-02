@@ -1,0 +1,87 @@
+﻿@page
+@model E_READINGSYSTEMS.Pages.Books.IndexModel
+@{
+}
+
+<br />
+<h2>List of Books</h2>
+<a class='btn btn-primarily btn-sm' href='/Books/Create'>New Book</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="~/css/Edit.css">
+
+</head>
+<body>
+
+    <div class="menu">
+
+        <div class="menurectangle"></div>
+
+        <div class="menucontent">
+            <span class="home">
+                <a href="index.html">Home</a>
+            </span>
+
+            <span class="dashboard">
+                <a href="index1.html">Dashboard</a>
+            </span>
+
+            <span class="addblogs">
+                <a href="index2.html">Add Blogs</a>
+
+            </span>
+            <span class="modifyblogs">
+                <a href="index3.html">Modify Blogs</a>
+            </span>
+
+            <span class="managingusers">
+                <a href="index6.html">Manage blogs</a>
+            </span>
+
+            <span class="logout">
+                <a href="index.html">Logout</a>
+            </span>
+        </div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Search">
+            <a class="search-btn" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <div class="topmenu">
+        <div class="piccircle"></div>
+    </div>
+    <div class="description"></div>
+
+    
+        @foreach(var item in Model.ListBooks)
+        {
+            <div class="forms">
+        <div class="innerrectangle">
+        <img class="img" src="@item.ArticlePicture">
+        <span id="articlename">@item.ArticleName</span>
+        <span class="articlecategory">@item.ArticleCategory</span>
+
+        <button id="edit" class="btn btn-primary btn-sm" onclick="location.href='/Books/Edit?BookID=@item.BookID'">Edit</button>
+        <button id="delete" class="btn btn-primary btn-sm" onclick="location.href='/Books/Delete?BookID=@item.BookID'">Delete</button>
+        </div>
+        </div>
+
+        }
+
+    
+    </div>
+
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+﻿body {
+    background-color: #f1f1f1;
+}
+
+.rectangle {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    left: 400px;
+    box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+    border: none;
+    border-radius: 10px;
+    top: 100px;
+}
+
+.form-group {
+    position: relative;
+    top: 90px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.loginword {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1.4px solid black;
+    outline: none;
+    padding: 0px;
+    background-color: transparent;
+    margin-left: -70px;
+    margin-top: 30px;
+    width: 250px;
+}
+
+.btn {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    background-color: #219ebc;
+    width: 250px;
+    height: 38px;
+    box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+    border: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
